@@ -23,7 +23,8 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "lint": "npx prettier --write src"
+        "prettier": "npx prettier --write src",
+        "prepare": "husky install"
     },
     "eslintConfig": {
         "extends": [
@@ -44,12 +45,6 @@
             }
         ]
     },
-    "husky": {
-        "hooks": {
-            "pre-commit": "npm run test",
-            "pre-push": "npm run prettier && npm run test"
-        }
-    },
     "browserslist": {
         "production": [
             ">0.2%",
@@ -64,7 +59,13 @@
     },
     "devDependencies": {
         "eslint-config-prettier": "^8.6.0",
-        "husky": "^8.0.3",
+        "husky": "^8.0.0",
         "prettier": "2.8.3"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run test",
+            "pre-push": "npm run prettier && npm run test"
+        }
     }
 }
