@@ -10,22 +10,28 @@ const App = () => {
   return (
     <>
       <h1>Start Project</h1>
-      <Button variant="contained">Create account</Button>
-      <Button variant="outlined">Outlined</Button>
-      <Button variant="outlined">View</Button>
-      <Button variant="outlined" startIcon={<SearchIcon />}>
+      <Button variant="contained" color="secondary">
+        Create account{' '}
+      </Button>
+      <Button variant="outlined" color="secondary">
+        Outlined
+      </Button>
+      <Button variant="outlined" color="secondary">
+        View
+      </Button>
+      <Button variant="outlined" startIcon={<SearchIcon />} color="secondary">
         Search
       </Button>
-      <Button variant="outlined" startIcon={<EditIcon />}>
+      <Button variant="outlined" startIcon={<EditIcon />} color="secondary">
         Edit
       </Button>
-      <Button variant="outlined" startIcon={<DeleteIcon />}>
+      <Button variant="outlined" startIcon={<DeleteIcon />} color="secondary">
         Delete
       </Button>
-      <Button variant="outlined" startIcon={<AddIcon />}>
+      <Button variant="outlined" startIcon={<AddIcon />} color="secondary">
         Add
       </Button>
-      <Button variant="outlined" startIcon={<CloseIcon />}>
+      <Button variant="outlined" startIcon={<CloseIcon />} color="secondary">
         Decline
       </Button>
     </>
