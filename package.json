@@ -10,6 +10,9 @@
     "lint:fix": "npm run lint -- --fix",
     "eject": "react-scripts eject"
   },
+  "lint-staged": {
+    "*.{js,tsx,ts}": "eslint --fix"
+  },
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
@@ -39,6 +42,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^8.0.0",
+    "lint-staged": "^13.1.2",
     "prettier": "^2.8.3"
   },
   "browserslist": {
