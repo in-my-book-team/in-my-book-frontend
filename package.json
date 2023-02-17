@@ -1,39 +1,60 @@
 {
-    "name": "in-my-book",
-    "version": "0.1.0",
-    "private": true,
-    "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test --watchAll=false",
-        "lint": "eslint src --ext .js,.tsx,.ts",
-        "lint:fix": "npm run lint -- --fix",
-        "eject": "react-scripts eject"
-    },
-    "dependencies": {
-        "@reduxjs/toolkit": "^1.9.2",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "react-router-dom": "^6.8.0",
-        "react-scripts": "5.0.1",
-        "typescript": "^4.9.4",
-        "web-vitals": "^2.1.4"
-    },
-    "devDependencies": {
-        "@testing-library/jest-dom": "^5.16.5",
-        "@testing-library/react": "^13.4.0",
-        "@testing-library/user-event": "^13.5.0",
-        "@types/jest": "^27.5.2",
-        "@types/node": "^16.18.11",
-        "@types/react": "^18.0.27",
-        "@types/react-dom": "^18.0.10",
-        "eslint": "^8.33.0",
-        "eslint-config-prettier": "^8.6.0",
-        "eslint-plugin-import": "^2.27.5",
-        "eslint-plugin-prettier": "^4.2.1",
-        "eslint-plugin-react": "^7.32.2",
-        "eslint-plugin-react-hooks": "^4.6.0",
-        "husky": "^8.0.0",
-        "prettier": "^2.8.3"
-    }
+  "name": "in-my-book",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --watchAll=false",
+    "lint": "eslint src --ext .js,.tsx,.ts",
+    "lint:fix": "npm run lint -- --fix",
+    "eject": "react-scripts eject"
+  },
+  "lint-staged": {
+    "*.{js,tsx,ts}": "eslint --fix"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.9.4",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@fontsource/montserrat": "^4.5.14",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.8",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.11",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.1.2",
+    "prettier": "^2.8.3"
+  }
 }

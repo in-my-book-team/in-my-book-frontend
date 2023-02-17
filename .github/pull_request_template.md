@@ -1,4 +1,4 @@
-### Task №
+### Task closes #
 
 * [ ] `npm run lint` check passed without any failures or warnings
 * [ ] functionality is covered by new tests
