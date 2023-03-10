@@ -11,7 +11,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           addReviewers: true
           reviewers: |
-            - OlyaPolya
-            - Konstantsin-Shumak
-            - AnhelinaVr
+            OlyaPolya
+            Konstantsin-Shumak
+            AnhelinaVr
           numberOfReviewers: 0
