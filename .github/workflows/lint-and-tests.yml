@@ -13,9 +13,9 @@ jobs:
         with:
           node-version: '16'
       - run: npm ci
-      - name: Tests application
+      - name: Run tests
         run: npm run test
-      - name: Lint application
+      - name: Run lint
         run: npm run lint
 
 

@@ -1,4 +1,4 @@
-name: Deploy site to Netlify
+name: Deploy application
 on:
   push:
       branches:
@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Deploy site
+      - name: Deploy application
         run: curl -X POST -d {} ${{ secrets.NETLIFY_BUILD_HOOK }}
