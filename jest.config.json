@@ -1,0 +1,13 @@
+{
+  "transform": {
+    "\\.(ts|tsx)$": ["ts-jest"]
+  },
+  "globals": {
+    "ts-jest": {
+      "isolatedModules": true
+    }
+  },
+  "testRegex": "test.(ts|tsx|js)$",
+  "roots": ["<rootDir>/tests"],
+  "moduleFileExtensions": ["ts", "tsx", "js", "json"]
+}

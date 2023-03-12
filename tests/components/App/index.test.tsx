@@ -1,9 +1,11 @@
-import '@testing-library/jest-dom';
-import { render, screen } from '@testing-library/react';
-import App from '../../../components/App';
+import Home from '../../../src/components/App';
+import React from 'react';
+import { render } from '@testing-library/react';
 
-it('renders welcome message', () => {
-  render(<App />);
+describe('<App />', () => {
+  it('should match snapshot', () => {
+    const { container } = render(<Home />);
 
-  expect(screen.getByText('Start Project')).toBeInTheDocument();
+    expect(container).toMatchSnapshot();
+  });
 });

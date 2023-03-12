@@ -5,7 +5,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --watchAll=false",
+    "test": "react-scripts test --watchAll=false -- --config=jest.config.json",
     "lint": "eslint src --ext .js,.tsx,.ts",
     "lint:fix": "npm run lint -- --fix",
     "eject": "react-scripts eject"
@@ -55,6 +55,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^8.0.0",
     "lint-staged": "^13.1.2",
-    "prettier": "^2.8.3"
+    "prettier": "^2.8.3",
+    "ts-jest": "^29.0.5"
   }
 }
