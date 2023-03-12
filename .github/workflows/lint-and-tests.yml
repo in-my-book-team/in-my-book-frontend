@@ -2,8 +2,6 @@ name: Run lint and tests on PR
 on:
   pull_request:
       types: [opened, edited]
-      branches:
-      - main
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -17,6 +15,3 @@ jobs:
         run: npm run test
       - name: Run lint
         run: npm run lint
-
-
-
