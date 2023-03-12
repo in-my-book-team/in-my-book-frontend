@@ -16,7 +16,7 @@ export const palette = createPalette({
     darker: '#5F2120',
   },
   background: {
-    main: '##FBF5F0',
+    main: '#FBF5F0',
     light: '#FFFFFF',
     dark: '#4B8E75',
     darker: '#D6D6D6',

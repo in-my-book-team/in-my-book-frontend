@@ -1,43 +1,32 @@
-import AddIcon from '@mui/icons-material/Add';
-import Button from '@mui/material/Button';
-import CloseIcon from '@mui/icons-material/Close';
-import DeleteIcon from '@mui/icons-material/Delete';
-import EditIcon from '@mui/icons-material/Edit';
-import SearchIcon from '@mui/icons-material/Search';
+import { Box, useTheme } from '@mui/material';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Footer } from '../Footer';
+import { Header } from '../Header';
+import Home from '../../pages/Home';
+import { Paths } from '../../constants';
+import { getStyles } from './styles';
+
+const links = [
+  { path: Paths.home, name: 'Home' },
+  { path: Paths.home, name: 'Rooms' },
+  { path: Paths.home, name: 'Books' },
+];
 
 const App = () => {
+  const theme = useTheme();
+  const styles = getStyles(theme);
+
+  // TODO: alert wrapper
   return (
-    <>
-      <h1>Start Project</h1>
-      <Button
-        variant="contained"
-        color="secondary"
-        sx={{ fontSize: 'typography.h1' }}
-      >
-        Create account{' '}
-      </Button>
-      <Button variant="outlined" color="secondary">
-        Outlined
-      </Button>
-      <Button variant="outlined" color="secondary">
-        View
-      </Button>
-      <Button variant="outlined" startIcon={<SearchIcon />} color="secondary">
-        Search
-      </Button>
-      <Button variant="outlined" startIcon={<EditIcon />} color="secondary">
-        Edit
-      </Button>
-      <Button variant="outlined" startIcon={<DeleteIcon />} color="secondary">
-        Delete
-      </Button>
-      <Button variant="outlined" startIcon={<AddIcon />} color="secondary">
-        Add
-      </Button>
-      <Button variant="outlined" startIcon={<CloseIcon />} color="secondary">
-        Decline
-      </Button>
-    </>
+    <Box sx={styles.container}>
+      <BrowserRouter>
+        <Header isAuthenticated={false} links={links} />
+        <Routes>
+          <Route path={Paths.home} element={<Home />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </Box>
   );
 };
 

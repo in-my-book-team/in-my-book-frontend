@@ -1,4 +1,5 @@
 import { breakpoints } from './breakpoints';
+import { components } from './components';
 import { createTheme } from '@mui/material';
 import { palette } from './palette';
 import { typography } from './typography';
@@ -8,14 +9,5 @@ export const theme = createTheme({
   spacing: 4,
   breakpoints,
   typography,
-  // TODO: decouple components from root theme config
-  components: {
-    MuiButton: {
-      styleOverrides: {
-        root: {
-          borderRadius: 20,
-        },
-      },
-    },
-  },
+  components,
 });

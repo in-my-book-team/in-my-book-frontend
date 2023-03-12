@@ -6,6 +6,7 @@ import { palette } from '../palette';
 
 const getTypography = (palette: PaletteOptions, breakpoints: Breakpoints) => ({
   fontSize: 15,
+  fontFamily: 'Montserrat',
   h1: {
     fontSize: 72,
     color: palette.text?.main,

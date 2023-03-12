@@ -3,7 +3,7 @@ import App from './components/App';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { ThemeProvider } from '@mui/material';
-import { theme } from './theme';
+import { theme } from './theme/index';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,

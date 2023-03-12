@@ -1,5 +1,7 @@
 import '@mui/material/styles';
 
+import '@mui/material/styles/createPalette';
+
 declare module '@mui/material/styles' {
   interface PaletteColorOptions {
     main: string;
@@ -8,12 +10,6 @@ declare module '@mui/material/styles' {
     dark?: string;
     darker?: string;
   }
-
-  // eslint-disable-next-line @typescript-eslint/no-empty-interface
-  interface TypeBackground extends PaletteColorOptions {}
-  // eslint-disable-next-line @typescript-eslint/no-empty-interface
-  interface TypeText extends PaletteColorOptions {}
-
   interface PaletteColor {
     primary: PaletteColorOptions;
     secondary: PaletteColorOptions;
@@ -24,6 +20,11 @@ declare module '@mui/material/styles' {
     info: PaletteColorOptions;
     success: PaletteColorOptions;
   }
+
+  // eslint-disable-next-line @typescript-eslint/no-empty-interface
+  interface TypeBackground extends PaletteColorOptions {}
+  // eslint-disable-next-line @typescript-eslint/no-empty-interface
+  interface TypeText extends PaletteColorOptions {}
 
   interface BreakpointOverrides {
     xs: false;
