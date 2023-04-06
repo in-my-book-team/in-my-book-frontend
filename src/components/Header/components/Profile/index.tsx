@@ -6,7 +6,7 @@ export const Profile = () => {
   const styles = getStyles(theme);
 
   return (
-    <Box sx={styles.profileContainer}>
+    <Box sx={styles.profileContainer} data-testid="header-profile">
       <Button>Username</Button>
     </Box>
   );

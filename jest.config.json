@@ -1,13 +1,11 @@
 {
-  "transform": {
-    "\\.(ts|tsx)$": ["ts-jest"]
-  },
-  "globals": {
-    "ts-jest": {
-      "isolatedModules": true
-    }
-  },
-  "testRegex": "test.(ts|tsx|js)$",
+  "preset": "ts-jest",
+  "testEnvironment": "jsdom",
   "roots": ["<rootDir>/tests"],
-  "moduleFileExtensions": ["ts", "tsx", "js", "json"]
+  "transform": {
+    "^.+\\.tsx?$": "ts-jest",
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/tests/__mocks__/fileTransformer.js",
+    "^.+\\.svg$": "jest-transformer-svg"
+  },
+  "testMatch": ["**/tests/**/*.+(spec|test).+(ts|tsx|js|jsx)"]
 }

@@ -28,7 +28,7 @@ export const Cards: React.FC<Props> = ({ cards }) => {
     <>
       <Box sx={styles.container}>
         {cards.map((card) => (
-          <Box sx={styles.card}>
+          <Box sx={styles.card} key={card.title}>
             {card.title && (
               <Typography variant="h3" sx={styles.title}>
                 {card.title}

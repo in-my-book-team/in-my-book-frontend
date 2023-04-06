@@ -1,7 +1,9 @@
+import '@testing-library/jest-dom';
 import { Header } from '../../../src/components/Header';
 import React from 'react';
 import { links } from './fixtures';
-import { render } from '@testing-library/react';
+import { render } from '../../wrapper';
+import { screen } from '@testing-library/react';
 
 describe('<Home />', () => {
   it('should match snapshot', () => {
@@ -10,5 +12,17 @@ describe('<Home />', () => {
     );
 
     expect(container).toMatchSnapshot();
+  });
+
+  it('should show profile when user is authenticated', () => {
+    render(<Header isAuthenticated={true} links={links} />);
+
+    expect(screen.getByTestId('header-profile')).toBeInTheDocument();
+  });
+
+  it('should show registration container when is not authenticated', () => {
+    render(<Header isAuthenticated={false} links={links} />);
+
+    expect(screen.getByTestId('header-registration')).toBeInTheDocument();
   });
 });

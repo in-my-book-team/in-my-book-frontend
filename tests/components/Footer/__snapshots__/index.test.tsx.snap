@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home /> should match snapshot 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-1e5i6q7"
+  >
+    <div
+      class="MuiBox-root css-1mioigq"
+    >
+      <svg
+        data-file-name="SvgGhIcon"
+      />
+      <a
+        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-j3poeh-MuiTypography-root-MuiLink-root"
+        href="https://github.com/in-my-book-team"
+        target="_blank"
+      >
+        GitHub
+      </a>
+    </div>
+    <p
+      class="MuiTypography-root MuiTypography-body1 css-1jx4n4e-MuiTypography-root"
+    >
+      Copyright © 2023. All rights reserved
+    </p>
+  </div>
+</div>
+`;

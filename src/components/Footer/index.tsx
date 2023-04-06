@@ -1,5 +1,5 @@
 import { Box, Link, Typography, useTheme } from '@mui/material';
-import { ReactComponent as GithubIcon } from './images/gh-icon.svg';
+import GithubIcon from './images/gh-icon.svg';
 import { getStyles } from './styles';
 
 export const Footer = () => {
@@ -9,7 +9,7 @@ export const Footer = () => {
   return (
     <Box sx={styles.container}>
       <Box sx={styles.github}>
-        <GithubIcon />
+        <img src={GithubIcon} alt="Github Logo" />
         <Link
           href="https://github.com/in-my-book-team"
           target="_blank"

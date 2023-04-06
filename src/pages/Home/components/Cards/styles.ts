@@ -29,13 +29,13 @@ export const getStyles = (theme: Theme): Record<string, SxProps> => ({
   },
   image: {
     maxWidth: theme.spacing(50),
-    flex: 1, // TODO: image heights are equal?
+    flex: 1,
     marginBottom: theme.spacing(3),
     objectFit: 'cover',
   },
   borderedImage: {
     maxWidth: theme.spacing(50),
-    flex: 1, // TODO: image heights are equal?
+    flex: 1,
     marginBottom: theme.spacing(3),
     objectFit: 'cover',
     border: `1px solid ${theme.palette.text.dark}`,
