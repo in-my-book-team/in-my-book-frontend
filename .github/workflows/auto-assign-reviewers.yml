@@ -1,6 +1,6 @@
 name: Auto Assign Reviewers
 on:
-  pull_request:
+  pull_request_target:
     types: [opened, edited]
 jobs:
   add-reviews:
