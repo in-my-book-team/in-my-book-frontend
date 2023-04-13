@@ -5,7 +5,6 @@ on:
 permissions: write-all
 jobs:
   run:
-  permissions: write-all
     runs-on: ubuntu-latest
     steps:
       - uses: wow-actions/auto-assign@v3
