@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home /> should match snapshot 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-cfepnb"
+  >
+    <div
+      class="MuiBox-root css-yvr2s2"
+    >
+      <svg
+        data-file-name="SvgLogo"
+      />
+    </div>
+    <div
+      class="MuiBox-root css-xd6fag"
+    >
+      <a
+        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1t1zlgp-MuiTypography-root-MuiLink-root"
+        href="/"
+      >
+        Home
+      </a>
+      <a
+        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1t1zlgp-MuiTypography-root-MuiLink-root"
+        href="/rooms"
+      >
+        Rooms
+      </a>
+      <a
+        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1t1zlgp-MuiTypography-root-MuiLink-root"
+        href="/books"
+      >
+        Books
+      </a>
+    </div>
+    <div
+      class="MuiBox-root css-1fpwgg0"
+      data-testid="header-registration"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+        tabindex="0"
+        type="button"
+      >
+        Sign In
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-ah646k-MuiButtonBase-root-MuiButton-root"
+        tabindex="0"
+        type="button"
+      >
+        Sign Up
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
