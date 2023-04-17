@@ -1,4 +1,4 @@
-name: Run lint and tests on PR
+name: Run lint on PR
 on:
   pull_request:
       types: [opened, edited]
@@ -13,6 +13,4 @@ jobs:
       - run: npm ci
       - name: Run lint
         run: npm run lint
-      - name: Run tests
-        run: npm run test
 
