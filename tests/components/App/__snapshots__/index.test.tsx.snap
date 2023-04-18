@@ -11,8 +11,14 @@ exports[`<App /> should match snapshot 1`] = `
       <div
         class="MuiBox-root css-yvr2s2"
       >
-        <svg
-          data-file-name="SvgLogo"
+        <img
+          alt="In My Book Application Logo"
+          src="function SvgLogo(props) {
+  return React.createElement(
+    'svg', 
+    Object.assign({}, props, {'data-file-name': SvgLogo.name})
+  );
+}"
         />
       </div>
       <div
@@ -285,8 +291,14 @@ exports[`<App /> should match snapshot 1`] = `
       <div
         class="MuiBox-root css-1mioigq"
       >
-        <svg
-          data-file-name="SvgGhIcon"
+        <img
+          alt="Github Logo"
+          src="function SvgGhIcon(props) {
+  return React.createElement(
+    'svg', 
+    Object.assign({}, props, {'data-file-name': SvgGhIcon.name})
+  );
+}"
         />
         <a
           class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-j3poeh-MuiTypography-root-MuiLink-root"

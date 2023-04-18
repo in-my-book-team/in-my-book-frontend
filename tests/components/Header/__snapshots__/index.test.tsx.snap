@@ -8,8 +8,14 @@ exports[`<Home /> should match snapshot 1`] = `
     <div
       class="MuiBox-root css-yvr2s2"
     >
-      <svg
-        data-file-name="SvgLogo"
+      <img
+        alt="In My Book Application Logo"
+        src="function SvgLogo(props) {
+  return React.createElement(
+    'svg', 
+    Object.assign({}, props, {'data-file-name': SvgLogo.name})
+  );
+}"
       />
     </div>
     <div
