@@ -1,0 +1,7 @@
+addReviewers: true
+addAssignees: false
+reviewers:
+  - OlyaPolya
+  - Konstantsin-Shumak
+  - AnhelinaVr
+numberOfReviewers: 0
