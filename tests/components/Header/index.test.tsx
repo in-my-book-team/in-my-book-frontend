@@ -5,7 +5,7 @@ import { links } from './fixtures';
 import { render } from '../../wrapper';
 import { screen } from '@testing-library/react';
 
-describe('<Home />', () => {
+describe('<Header />', () => {
   it('should match snapshot', () => {
     const { container } = render(
       <Header isAuthenticated={false} links={links} />,

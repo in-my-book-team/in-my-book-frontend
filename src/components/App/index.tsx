@@ -1,5 +1,6 @@
 import { Box, useTheme } from '@mui/material';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Alert } from '../Alert';
 import { Footer } from '../Footer';
 import { Header } from '../Header';
 import Home from '../../pages/Home';
@@ -16,9 +17,9 @@ const App = () => {
   const theme = useTheme();
   const styles = getStyles(theme);
 
-  // TODO: alert wrapper
   return (
     <Box sx={styles.container}>
+      <Alert />
       <BrowserRouter>
         <Header isAuthenticated={false} links={links} />
         <Routes>

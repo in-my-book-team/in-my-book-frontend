@@ -7,3 +7,5 @@ export const Paths = {
   signIn: '/sign-in',
   signUp: '/sign-up',
 };
+
+export const DEFAULT_ALERT_TIMEOUT_MS = 2000;
