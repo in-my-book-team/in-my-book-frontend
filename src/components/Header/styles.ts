@@ -11,7 +11,7 @@ export const getStyles = (theme: Theme): Record<string, SxProps> => ({
     zIndex: 999,
     width: '100%',
     padding: theme.spacing(0, 8),
-    backgroundColor: theme.palette.background.light,
+    backgroundColor: theme.palette.background.lighter,
   },
   logoContainer: {
     width: '100%',

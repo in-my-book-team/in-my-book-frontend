@@ -13,9 +13,10 @@ type Card = {
 
 type Props = {
   cards: Card[];
+  highlighted?: boolean;
 };
 
-export const Cards: React.FC<Props> = ({ cards }) => {
+export const Cards: React.FC<Props> = ({ cards, highlighted }) => {
   const theme = useTheme();
   const styles = getStyles(theme);
   const navigate = useNavigate();
@@ -30,7 +31,13 @@ export const Cards: React.FC<Props> = ({ cards }) => {
         {cards.map((card) => (
           <Box sx={styles.card} key={card.title}>
             {card.title && (
-              <Typography variant="h3" sx={styles.title}>
+              <Typography
+                variant="h3"
+                sx={() => ({
+                  ...styles.title,
+                  ...(highlighted ? styles.titleHighlighted : {}),
+                })}
+              >
                 {card.title}
               </Typography>
             )}
