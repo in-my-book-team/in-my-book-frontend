@@ -2,20 +2,20 @@ import { SxProps, Theme } from '@mui/material';
 import HeroesBackground from './images/heroes/background.png';
 
 export const getStyles = (theme: Theme): Record<string, SxProps> => ({
-  main: {
+  mainContainer: {
     position: 'relative',
     height: '100vh',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    paddingLeft: theme.spacing(13.5),
-    '& p, h2, h3': {
+    paddingLeft: theme.spacing(14),
+    '& p, h2, h5': {
       position: 'relative',
       maxWidth: theme.spacing(100),
     },
     background: `linear-gradient(
       ${theme.palette.background.light} 0%, 
-      ${theme.palette.background.light} 60%, 
+      ${theme.palette.background.light} 90%, 
       ${theme.palette.background.lighter}
       )`,
     [theme.breakpoints.down('desktop')]: {
@@ -31,11 +31,18 @@ export const getStyles = (theme: Theme): Record<string, SxProps> => ({
   mainContent: {
     marginTop: theme.spacing(31),
   },
-  mainContentTitle: {
+  mainTitle: {
     fontSize: 72,
+    margin: 0,
     [theme.breakpoints.down('tablet')]: {
       fontSize: 60,
     },
+  },
+  mainDescription: {
+    marginTop: theme.spacing(10),
+    background: `rgba(241, 224, 208, 0.65)`,
+    borderRadius: theme.spacing(2),
+    padding: theme.spacing(2),
   },
   mainImage: {
     position: 'absolute',
@@ -46,7 +53,7 @@ export const getStyles = (theme: Theme): Record<string, SxProps> => ({
   },
   title: {
     textAlign: 'center',
-    marginBottom: theme.spacing(2),
+    marginBottom: theme.spacing(9),
     fontWeight: theme.typography.fontWeightBold,
     textTransform: 'uppercase',
     color: theme.palette.text.main,
@@ -55,11 +62,11 @@ export const getStyles = (theme: Theme): Record<string, SxProps> => ({
     },
   },
   about: {
-    marginTop: theme.spacing(28.5),
+    marginTop: theme.spacing(20),
     display: 'block',
     position: 'relative',
     [theme.breakpoints.down('desktop')]: {
-      marginTop: theme.spacing(18),
+      marginTop: theme.spacing(20),
     },
     [theme.breakpoints.down('tablet')]: {
       marginTop: theme.spacing(13),
@@ -76,10 +83,9 @@ export const getStyles = (theme: Theme): Record<string, SxProps> => ({
     },
   },
   heroes: {
-    marginTop: theme.spacing(42.5),
-    marginBottom: theme.spacing(25),
+    margin: theme.spacing(20, 0),
     [theme.breakpoints.down('desktop')]: {
-      margin: theme.spacing(18, 0),
+      margin: theme.spacing(20, 0),
     },
     [theme.breakpoints.down('tablet')]: {
       margin: theme.spacing(13, 0),
@@ -88,7 +94,6 @@ export const getStyles = (theme: Theme): Record<string, SxProps> => ({
   heroesContainer: {
     background: theme.palette.background.main,
     backgroundImage: `url(${HeroesBackground})`,
-    paddingTop: theme.spacing(1),
-    marginTop: theme.spacing(5),
+    padding: theme.spacing(1),
   },
 });

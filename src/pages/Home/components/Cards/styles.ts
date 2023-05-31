@@ -1,11 +1,16 @@
 import { SxProps, Theme } from '@mui/material';
 
-export const getStyles = (theme: Theme): Record<string, SxProps> => ({
+export const getStyles = (
+  theme: Theme,
+  highlighted?: boolean,
+): Record<string, SxProps> => ({
   container: {
     display: 'flex',
     justifyContent: 'space-evenly',
     flexWrap: 'wrap',
-    marginTop: theme.spacing(17.5),
+    margin: highlighted
+      ? theme.spacing(17.5, 0, 0, 0)
+      : theme.spacing(10, 0, 4, 0),
     [theme.breakpoints.down('tablet')]: {
       marginTop: theme.spacing(5),
     },
@@ -16,7 +21,7 @@ export const getStyles = (theme: Theme): Record<string, SxProps> => ({
     flexDirection: 'column',
     alignItems: 'center',
     [theme.breakpoints.down('tablet')]: {
-      '&:not(:first-child)': {
+      '&:not(:first-of-type)': {
         marginTop: theme.spacing(8),
       },
     },

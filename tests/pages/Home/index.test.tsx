@@ -1,6 +1,6 @@
 import Home from '../../../src/pages/Home';
 import React from 'react';
-import { render } from '../../wrapper';
+import { render } from '../../helpers/wrapper';
 
 describe('<Home />', () => {
   it('should match snapshot', () => {

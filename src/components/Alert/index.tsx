@@ -41,6 +41,7 @@ export const Alert = () => {
           anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
           autoHideDuration={alert.timeout}
           onClose={handleClose}
+          data-testid={`alert-${alert.type}`}
         >
           <MuiAlert
             severity={alert.type}

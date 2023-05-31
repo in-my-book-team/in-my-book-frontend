@@ -7,7 +7,9 @@
       "esnext"
     ],
     "types": [
-      "react-scripts","@types/jest"
+      "react-scripts", 
+      "@types/jest", 
+      "@testing-library/jest-dom"
     ],
     "allowJs": true,
     "skipLibCheck": true,

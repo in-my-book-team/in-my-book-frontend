@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     <>
-      <Box sx={styles.main}>
+      <Box sx={styles.mainContainer}>
         <img
           style={styles.mainImage as CSSProperties}
           src={MainBackground}
@@ -22,7 +22,7 @@ const Home = () => {
             variant="h2"
             sx={() => ({
               ...styles.title,
-              ...styles.mainContentTitle,
+              ...styles.mainTitle,
               ...({ color: 'secondary.main' } as unknown as typeof styles),
             })}
           >
@@ -32,20 +32,20 @@ const Home = () => {
             variant="h2"
             sx={() => ({
               ...styles.title,
-              ...styles.mainContentTitle,
+              ...styles.mainTitle,
               ...({ color: 'primary.main' } as unknown as typeof styles),
             })}
           >
             club
           </Typography>
-          <h3 style={{ marginTop: theme.spacing(11.5) }}>
+          <Typography variant="h5" sx={styles.mainDescription}>
             This application allows you to unite people with a common interest -
             reading books. The functionality allows users to share their
             opinions by writing book reviews, allows you to create rooms for
             joint discussion of books with the possibility of creating a video
             chat. In addition, the functionality of the application allows you
             to make personal notes about the book you read
-          </h3>
+          </Typography>
         </Box>
       </Box>
       <Box sx={styles.about}>

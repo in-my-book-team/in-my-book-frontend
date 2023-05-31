@@ -7,5 +7,6 @@
     "\\.(jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/tests/__mocks__/fileTransformer.js",
     "^.+\\.svg$": "jest-transformer-svg"
   },
-  "testMatch": ["**/tests/**/*.+(spec|test).+(ts|tsx|js|jsx)"]
+  "testMatch": ["**/tests/**/*.+(spec|test).+(ts|tsx|js|jsx)"],
+  "setupFilesAfterEnv": ["<rootDir>/tests/helpers/setupTests.ts"]
 }
