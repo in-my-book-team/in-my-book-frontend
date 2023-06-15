@@ -26,11 +26,13 @@
     ]
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^1.9.2",
+    "@reduxjs/toolkit": "^1.9.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
     "react-router-dom": "^6.8.0",
     "react-scripts": "5.0.1",
+    "redux": "^4.2.1",
     "typescript": "^4.9.4",
     "web-vitals": "^2.1.4"
   },
@@ -47,6 +49,7 @@
     "@types/node": "^16.18.11",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
+    "@types/redux-mock-store": "^1.0.3",
     "eslint": "^8.33.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-import": "^2.27.5",
@@ -58,6 +61,7 @@
     "jest-transformer-svg": "^2.0.1",
     "lint-staged": "^13.1.2",
     "prettier": "^2.8.3",
+    "redux-mock-store": "^1.5.4",
     "ts-jest": "^29.0.5"
   }
 }

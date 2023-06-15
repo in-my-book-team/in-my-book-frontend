@@ -70,48 +70,52 @@ exports[`<App /> should match snapshot 1`] = `
       </div>
     </div>
     <div
-      class="MuiBox-root css-1qz38mj"
+      class="MuiBox-root css-1fvd2r1"
     >
       <img
         alt="background"
-        src="main.jpg"
-        style="position: absolute; width: 100%; left: 0px; top: 0px; object-fit: cover; height: 100%;"
+        src="main.png"
+        style="position: absolute; max-width: 1572px; bottom: 0px; width: 100%; right: 0px;"
       />
-      <h2
-        class="MuiTypography-root MuiTypography-h2 css-ustah6-MuiTypography-root"
+      <div
+        class="MuiBox-root css-t8vfqg"
       >
-        BOOKS
-      </h2>
-      <h2
-        class="MuiTypography-root MuiTypography-h2 css-10dqq5q-MuiTypography-root"
-      >
-        club
-      </h2>
-      <h3
-        style="margin-top: 92px;"
-      >
-        This application allows you to unite people with a common interest - reading books. The functionality allows users to share their opinions by writing book reviews, allows you to create rooms for joint discussion of books with the possibility of creating a video chat. In addition, the functionality of the application allows you to make personal notes about the book you read
-      </h3>
+        <h2
+          class="MuiTypography-root MuiTypography-h2 css-1rx97d8-MuiTypography-root"
+        >
+          BOOKS
+        </h2>
+        <h2
+          class="MuiTypography-root MuiTypography-h2 css-y94pyy-MuiTypography-root"
+        >
+          club
+        </h2>
+        <h5
+          class="MuiTypography-root MuiTypography-h5 css-1ncwoai-MuiTypography-root"
+        >
+          This application allows you to unite people with a common interest - reading books. The functionality allows users to share their opinions by writing book reviews, allows you to create rooms for joint discussion of books with the possibility of creating a video chat. In addition, the functionality of the application allows you to make personal notes about the book you read
+        </h5>
+      </div>
     </div>
     <div
-      class="MuiBox-root css-1lh2ipp"
+      class="MuiBox-root css-10itben"
     >
       <h2
-        class="MuiTypography-root MuiTypography-h2 css-18zrctw-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-h2 css-131agbk-MuiTypography-root"
       >
         About Us
       </h2>
       <div
-        class="MuiBox-root css-t68gks"
+        class="MuiBox-root css-f3scve"
       />
       <div
-        class="MuiBox-root css-kx25ay"
+        class="MuiBox-root css-3hhxqo"
       >
         <div
-          class="MuiBox-root css-1r3t2am"
+          class="MuiBox-root css-1wkb7z3"
         >
           <h3
-            class="MuiTypography-root MuiTypography-h3 css-3jtalt-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-h3 css-oxfbg2-MuiTypography-root"
           >
             Join
           </h3>
@@ -142,10 +146,10 @@ exports[`<App /> should match snapshot 1`] = `
           </button>
         </div>
         <div
-          class="MuiBox-root css-1r3t2am"
+          class="MuiBox-root css-1wkb7z3"
         >
           <h3
-            class="MuiTypography-root MuiTypography-h3 css-3jtalt-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-h3 css-oxfbg2-MuiTypography-root"
           >
             Communicate
           </h3>
@@ -176,10 +180,10 @@ exports[`<App /> should match snapshot 1`] = `
           </button>
         </div>
         <div
-          class="MuiBox-root css-1r3t2am"
+          class="MuiBox-root css-1wkb7z3"
         >
           <h3
-            class="MuiTypography-root MuiTypography-h3 css-3jtalt-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-h3 css-oxfbg2-MuiTypography-root"
           >
             Have fun!
           </h3>
@@ -212,26 +216,26 @@ exports[`<App /> should match snapshot 1`] = `
       </div>
     </div>
     <div
-      class="MuiBox-root css-1b3cf6i"
+      class="MuiBox-root css-1flv2gt"
     >
       <h2
-        class="MuiTypography-root MuiTypography-h2 css-18zrctw-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-h2 css-131agbk-MuiTypography-root"
       >
         Our Heroes
       </h2>
       <div
-        class="MuiBox-root css-1kmst6o"
+        class="MuiBox-root css-15hapvs"
       >
         <div
-          class="MuiBox-root css-kx25ay"
+          class="MuiBox-root css-n6vyx9"
         >
           <div
-            class="MuiBox-root css-1r3t2am"
+            class="MuiBox-root css-1wkb7z3"
           >
             <img
               alt="card"
               src="anhelina_vrubleuskaya.jpg"
-              style="max-width: 400px; flex: 1; margin-bottom: 24px; object-fit: cover; border-radius: 16px;"
+              style="max-width: 400px; max-height: 400px; flex: 1; margin-bottom: 24px; object-fit: cover; border-radius: 400px;"
             />
             <h4
               class="MuiTypography-root MuiTypography-h4 css-1psfiy1-MuiTypography-root"
@@ -245,12 +249,12 @@ exports[`<App /> should match snapshot 1`] = `
             </p>
           </div>
           <div
-            class="MuiBox-root css-1r3t2am"
+            class="MuiBox-root css-1wkb7z3"
           >
             <img
               alt="card"
               src="olga_polyanskaya.jpg"
-              style="max-width: 400px; flex: 1; margin-bottom: 24px; object-fit: cover; border-radius: 16px;"
+              style="max-width: 400px; max-height: 400px; flex: 1; margin-bottom: 24px; object-fit: cover; border-radius: 400px;"
             />
             <h4
               class="MuiTypography-root MuiTypography-h4 css-1psfiy1-MuiTypography-root"
@@ -264,12 +268,12 @@ exports[`<App /> should match snapshot 1`] = `
             </p>
           </div>
           <div
-            class="MuiBox-root css-1r3t2am"
+            class="MuiBox-root css-1wkb7z3"
           >
             <img
               alt="card"
               src="konstantin_shumak.jpg"
-              style="max-width: 400px; flex: 1; margin-bottom: 24px; object-fit: cover; border-radius: 16px;"
+              style="max-width: 400px; max-height: 400px; flex: 1; margin-bottom: 24px; object-fit: cover; border-radius: 400px;"
             />
             <h4
               class="MuiTypography-root MuiTypography-h4 css-1psfiy1-MuiTypography-root"
@@ -286,7 +290,7 @@ exports[`<App /> should match snapshot 1`] = `
       </div>
     </div>
     <div
-      class="MuiBox-root css-1e5i6q7"
+      class="MuiBox-root css-1vz5iwo"
     >
       <div
         class="MuiBox-root css-1mioigq"

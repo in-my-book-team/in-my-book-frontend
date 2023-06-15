@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Home /> should match snapshot 1`] = `
+exports[`<Footer /> should match snapshot 1`] = `
 <div>
   <div
-    class="MuiBox-root css-1e5i6q7"
+    class="MuiBox-root css-1vz5iwo"
   >
     <div
       class="MuiBox-root css-1mioigq"

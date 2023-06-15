@@ -1,22 +1,44 @@
 import { SxProps, Theme } from '@mui/material';
 
-export const getStyles = (theme: Theme): Record<string, SxProps> => ({
+export const getStyles = (
+  theme: Theme,
+  highlighted?: boolean,
+): Record<string, SxProps> => ({
   container: {
     display: 'flex',
     justifyContent: 'space-evenly',
-    marginTop: theme.spacing(17.5),
+    flexWrap: 'wrap',
+    margin: highlighted
+      ? theme.spacing(17.5, 0, 0, 0)
+      : theme.spacing(10, 0, 4, 0),
+    [theme.breakpoints.down('tablet')]: {
+      marginTop: theme.spacing(5),
+    },
   },
   card: {
     display: 'flex',
     justifyContent: 'space-between',
     flexDirection: 'column',
     alignItems: 'center',
+    [theme.breakpoints.down('tablet')]: {
+      '&:not(:first-of-type)': {
+        marginTop: theme.spacing(8),
+      },
+    },
   },
   title: {
     textTransform: 'uppercase',
     color: theme.palette.text.light,
     marginBottom: theme.spacing(12.5),
     fontWeight: theme.typography.fontWeightBold,
+  },
+  titleHighlighted: {
+    background: theme.palette.background.dark,
+    [theme.breakpoints.down('tablet')]: {
+      width: '100vw',
+      textAlign: 'center',
+      padding: theme.spacing(5, 0),
+    },
   },
   subtitle: {
     color: theme.palette.text.lighter,
@@ -35,11 +57,12 @@ export const getStyles = (theme: Theme): Record<string, SxProps> => ({
   },
   borderedImage: {
     maxWidth: theme.spacing(50),
+    maxHeight: theme.spacing(50),
     flex: 1,
     marginBottom: theme.spacing(3),
     objectFit: 'cover',
-    border: `1px solid ${theme.palette.text.dark}`,
-    borderRadius: theme.spacing(2),
+    border: `2px solid ${theme.palette.background.darker}`,
+    borderRadius: theme.spacing(50),
   },
   description: {
     textAlign: 'center',

@@ -17,7 +17,8 @@ export const palette = createPalette({
   },
   background: {
     main: '#FBF5F0',
-    light: '#FFFFFF',
+    light: '#F1E0D0',
+    lighter: '#FFFFFF',
     dark: '#4B8E75',
     darker: '#D6D6D6',
   },
@@ -35,10 +36,10 @@ export const palette = createPalette({
   },
   warning: {
     main: '#E8554D',
-    darker: '#E76760',
+    dark: '#E76760',
   },
   success: {
     main: '#EDF7ED',
-    darker: '#1E4520',
+    dark: '#1E4520',
   },
 });
